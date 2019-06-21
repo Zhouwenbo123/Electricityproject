@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_wdf">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_142"
+        android:background="@drawable/my_shape_radius"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintRight_toRightOf="parent"
+        fresco:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/my_image_header"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_102"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/my_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintRight_toRightOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_image_header" />
+
+    <ImageView
+        android:id="@+id/my_image_personal"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_70"
+        android:src="@mipmap/grzl_wdf"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_text_name" />
+
+    <View
+        android:id="@+id/my_view_personal"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#cccccc"
+        fresco:layout_constraintBottom_toBottomOf="@id/my_image_personal"
+        fresco:layout_constraintLeft_toRightOf="@id/my_image_personal"
+        fresco:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/my_text_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="个人资料"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintBottom_toTopOf="@id/my_view_personal"
+        fresco:layout_constraintLeft_toLeftOf="@id/my_view_personal" />
+
+    <ImageView
+        android:id="@+id/my_image_circle"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_25"
+        android:src="@mipmap/wdqz_wdf"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_image_personal" />
+
+    <View
+        android:id="@+id/my_view_circle"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#cccccc"
+        fresco:layout_constraintBottom_toBottomOf="@id/my_image_circle"
+        fresco:layout_constraintLeft_toRightOf="@id/my_image_circle"
+        fresco:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/my_text_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="我的圈子"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintBottom_toTopOf="@id/my_view_circle"
+        fresco:layout_constraintLeft_toLeftOf="@id/my_view_circle" />
+
+
+    <ImageView
+        android:id="@+id/my_image_foot"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_25"
+        android:src="@mipmap/zj_wdf"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_image_circle" />
+
+    <View
+        android:id="@+id/my_view_foot"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#cccccc"
+        fresco:layout_constraintBottom_toBottomOf="@id/my_image_foot"
+        fresco:layout_constraintLeft_toRightOf="@id/my_image_foot"
+        fresco:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/my_text_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="我的足迹"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintBottom_toTopOf="@id/my_view_foot"
+        fresco:layout_constraintLeft_toLeftOf="@id/my_view_foot" />
+
+    <ImageView
+        android:id="@+id/my_image_wallet"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_25"
+        android:src="@mipmap/wdqb_wdf"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_image_foot" />
+
+    <View
+        android:id="@+id/my_view_wallet"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#cccccc"
+        fresco:layout_constraintBottom_toBottomOf="@id/my_image_wallet"
+        fresco:layout_constraintLeft_toRightOf="@id/my_image_wallet"
+        fresco:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/my_text_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="我的钱包"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintBottom_toTopOf="@id/my_view_wallet"
+        fresco:layout_constraintLeft_toLeftOf="@id/my_view_wallet" />
+
+    <ImageView
+        android:id="@+id/my_image_site"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_25"
+        android:src="@mipmap/shdz_wdf"
+        fresco:layout_constraintLeft_toLeftOf="parent"
+        fresco:layout_constraintTop_toBottomOf="@id/my_image_wallet" />
+
+    <View
+        android:id="@+id/my_view_site"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="#cccccc"
+        fresco:layout_constraintBottom_toBottomOf="@id/my_image_site"
+        fresco:layout_constraintLeft_toRightOf="@id/my_image_site"
+        fresco:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/my_text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:text="我的收货地址"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_14"
+        fresco:layout_constraintBottom_toTopOf="@id/my_view_site"
+        fresco:layout_constraintLeft_toLeftOf="@id/my_view_site" />
+</android.support.constraint.ConstraintLayout>
